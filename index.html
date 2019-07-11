@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Tesseract OCR web application</title>
+    <h1>Attach an image to perform OCR</h1><br>
+</head>  
+<body>
+Select image to upload:
+<form action="{{ url_for('upload')}}" method="post" enctype="multipart/form-data">
+<input type = "file" name="file" accept="image/* multiple">
+<input type="submit" value="Upload image" name="send_image">
+</form>
+
+
+
+</body>
+</html>
